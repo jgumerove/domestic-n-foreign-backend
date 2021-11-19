@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#coordinate notes: all southern and western values are negative
+
+#coordinates for Washington DC
+united_states = Country.create(name: "United States", flag: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
+long: 38.9072, lat: -77.0369)
+
+#coordinates for Moscow
+russia = Country.create(name: "Russia", flag: "https://cdn.britannica.com/42/3842-004-F47B77BC/Flag-Russia.jpg",
+long: 55.7558, lat: 37.6173)
+
+#coordinates for Beijing
+china = Country.create(name: "China", flag: "https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg",
+long: 39.9042, lat: 116.4074)
