@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country: one
+  base_long: 1.5
+  base_lat: 1.5
+  location: MyString
+  base_type: MyString
+
+two:
+  country: two
+  base_long: 1.5
+  base_lat: 1.5
+  location: MyString
+  base_type: MyString
