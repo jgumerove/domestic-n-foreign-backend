@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_19_180820) do
+ActiveRecord::Schema.define(version: 2021_11_23_201958) do
+
+  create_table "bases", force: :cascade do |t|
+    t.float "base_long"
+    t.float "base_lat"
+    t.string "location"
+    t.string "base_type"
+    t.integer "country_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["country_id"], name: "index_bases_on_country_id"
+  end
 
   create_table "countries", force: :cascade do |t|
     t.string "name"
@@ -21,4 +32,17 @@ ActiveRecord::Schema.define(version: 2021_11_19_180820) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "places", force: :cascade do |t|
+    t.integer "country_id", null: false
+    t.float "base_long"
+    t.float "base_lat"
+    t.string "location"
+    t.string "base_type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["country_id"], name: "index_places_on_country_id"
+  end
+
+  add_foreign_key "bases", "countries"
+  add_foreign_key "places", "countries"
 end
