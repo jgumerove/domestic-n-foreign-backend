@@ -105,7 +105,13 @@ india.places.create(base_long: 19.6616, base_lat: 57.7047, location: "Duqm, Oman
 #coordinates for Tehran
 iran = Country.create(name: "Iran", flag: "https://cdn.britannica.com/22/1722-004-EAD033D8/Flag-Iran.jpg",
 long: 35.6892, lat: 51.3890)
-iran.places.create(base_long: 47.4979, base_lat: 19.0402, location: "Budapest", base_type: "Test")
+iran.places.create(base_long: 33.2000, base_lat: 44.2600, location: "Baghdad, Iraq", base_type: "Military Facility")
+iran.places.create(base_long: 32.2540, base_lat: 41.3600, location: "Al Anbar, Iraq", base_type: "Military Facility")
+iran.places.create(base_long: 34.4500, base_lat: 43.5833, location: "Saladin Governorate, Iraq", base_type: "Military Facility")
+iran.places.create(base_long: 33.3500, base_lat: 36.2333, location: "Al-Kiswah, Syria", base_type: "Military Base")
+iran.places.create(base_long: 34.4536, base_lat: 40.9366, location: "Abu Kamal, Syria", base_type: "Military Facility")
+iran.places.create(base_long: 33.8333, base_lat: 35.9000, location: "Beqaa, Lebanon", base_type: "Military Facility")
+iran.places.create(base_long: 33.8333, base_lat: 35.5000, location: "Beirut, Lebanon", base_type: "Military Facility")
 
 #coordinates for Jerusalem
 israel = Country.create(name: "Israel", flag: "https://cdn.britannica.com/53/1753-004-03582EDA/Flag-Israel.jpg",
